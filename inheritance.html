@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 繼承</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 繼承</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>繼承</b></h3>
+            <p>
+                在一個 HTML 文件中，標籤之間有所謂的親子關係。舉例來說，&lt;title&gt; 這個標籤一定都是在 &lt;head&gt; 這個標籤之內，所以我們就說 &lt;title&gt; 是 &lt;head&gt; 的子標籤。繼承 (inheritance) 的意思就是說子標籤的樣式會跟父標籤一樣，除非子標籤本身另有自訂的樣式。
+            </p>
+            <p>舉例來說，如果我們有以下的樣式：</p>
+            <div class="block">
+                <p>
+                    p { color: #00FF00; }<br>
+                    strong { font-size:20px; }<br>
+                </p>
+            </div>
+            <p>下面這行 HTML 碼，</p>
+            <div class="block">
+                <p>
+                    &lt;p&gt;這是一個 &lt;strong&gt;繼承的例子。&lt;/strong&gt;&lt;/p&gt;
+                </p>
+            </div>
+            <p class="lightgreen">這是一個<strong>繼承的例子。</strong></p>
+            <p>
+                在以上的例子中，雖然我們並沒有對 &lt;strong&gt; 設定顏色，可是我們可以看到，整個句子的顏色都是綠色的。這是因為， &lt;strong&gt; 是 &lt;p&gt; 的子標籤，所以 &lt;strong&gt; 繼承了 &lt;p&gt; 的樣式，而在 &lt;p&gt; 的樣式中，文字顏色是設定為綠色的。
+            </p>
+
+            <center>下一頁：<a href="class-id.html">CSS Class 與 CSS ID</a></center>
+        </div>
+    </div>
+</body>
+</html>

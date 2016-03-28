@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 字體</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 字體</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>字體</b></h3>
+            <p>
+                在 CSS 中常見的字體 (font) 屬性有以下幾種：
+            </p>
+            <ul>
+                <li>
+                    <a href="font.html#family">font-family</a>
+                </li>
+                <li>
+                    <a href="font.html#size">font-size</a>
+                </li>
+                <li>
+                    <a href="font.html#weight">font-weight</a>
+                </li>
+                <li>
+                    <a href="font.html#style">font-style</a>
+                </li>
+                <li>
+                    <a href="font.html#variant">font-variant</a>
+                </li>
+            </ul>
+            <p>
+                每一個屬性在以下會有詳細地介紹：
+            </p>
+            <a name="family"></a>
+            <h5>font-family</h5>
+            <p>
+                <b>font-family</b> 屬性是用來設定字體的類別。
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {font-family: verdana;}</td>
+                    <td>
+                        <p class="verdana">
+                            Font Family Verdana.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-family: arial;}</td>
+                    <td>
+                        <p class="arial">
+                            Font Family Arial.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-family: impact;}</td>
+                    <td>
+                        <p class="impact">
+                            Font Family Impact.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="size"></a>
+            <h5>font-size</h5>
+            <p>
+                <b>font-size</b> 屬性是用來設定字體的大小。大小可以是以數字顯現 (絕對的或是相較的均可)，或是以下其中之一的值："xx-large"、 "x-large"、 "large"、 "medium"、 "small"、 "x-small"、和 "xx-small"。
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {font-size:9px;}</td>
+                    <td>
+                        <p class="font9px">
+                            字體大小為 9px。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:150%;}</td>
+                    <td>
+                        <p class="font150p">
+                            字體大小為 150%。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:0.8cm;}</td>
+                    <td>
+                        <p class="font0.8cm">
+                            字體大小為 0.8 cm。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:small;}</td>
+                    <td>
+                        <p class="fontsmall">
+                            字體大小為 small。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:large;}</td>
+                    <td>
+                        <p class="fontlarge">
+                            字體大小為 large。
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="weight"></a>
+            <h5>font-weight</h5>
+            <p>
+                <b>font-weight</b> 屬性是用來設定字體的厚度。厚度的設定值可以從 100 到 900 (900 是最厚的)。另外，我們也可以將厚度設定為 bold (厚)、bolder (更厚)、及 normal (正常)。
+            </p>
+            <p>
+                以下舉幾個例子：
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {font-weight: 100;}</td>
+                    <td>
+                        <p class="weight100">
+                            這是厚度 100。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-weight: 900;}</td>
+                    <td>
+                        <p class="weight900">
+                            這是厚度 900。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-weight: bold;}</td>
+                    <td>
+                        <p class="weightbold">
+                            這是 bold 厚度。
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="style"></a>
+            <h5>font-style</h5>
+            <p>
+                <b>font-style</b> 屬性是用來設定字體是否為斜體字 (italic 或 oblique)。
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {font-style: italic;}</td>
+                    <td>
+                        <p class="italic">
+                            這是斜體字。
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="variant"></a>
+            <h5>font-variant</h5>
+            <p>
+                <b>font-variant</b> 屬性是用來設定文字是不是要以小型大寫 (small caps) 字體顯現。在小型大寫字體中，所有的字母都是大寫，可是字體是比一般大寫來得小。可能的值為 "small-caps" 和 "normal"。來看下面的例子：
+            </p>
+            <p>
+                CSS 宣告，
+            </p>
+            <div class="block">
+                <p>
+                    span {<br>
+                    &nbsp; font-variant:small-caps;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                以下的 HTML 碼，
+            </p>
+            <div class="block">
+                &lt;span&gt;initial in small caps&lt;/span&gt; AND LATER IN LARGE CAPS.
+            </div>
+            <p>
+                就會顯現出，
+            </p>
+            <div class="greenblock">
+                <span class="variant">initial in small caps</span>
+                AND LATER IN LARGE CAPS.
+            </div>
+            <center>下一頁：<a href="link.html">CSS 連接</a></center>
+        </div>
+    </div>
+</body>
+</html>

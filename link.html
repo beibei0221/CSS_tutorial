@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 連接</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 連接</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>連接</b></h3>
+            <p>
+                連接的預設樣式是藍色，且有下劃線。可是，有的時候，我們會想要改變一下這個預設的樣式。這可以透過以下幾個選擇器來達成：
+            </p>
+            <p>
+                <b>a:link</b>：設定當連接過去的網頁尚未被看過時，該連接的樣式。
+            </p>
+            <p>
+                <b>a:visited</b>：設定當連接過去的網頁已經看過時，該連接的樣式。
+            </p>
+            <p>
+                <b>a:hover</b>：設定當滑鼠蓋在連接上面時，該連接的樣式。
+            </p>
+            <p>
+                <b>a:active</b>：設定當連接被點擊時，該連接的樣式。
+            </p>
+            <p>讓我們來看看以下的樣式：</p>
+            <div class="block">
+                <p>
+                    a:link {color:#FF0000; text-decoration:none;}<br>
+                    a:visited {color:#0000FF; text-decoration:none;}<br>
+                    a:hover {font-size:20; color:#00FF00; text-decoration:underline;}<br>
+                    a:active {color:#FF00FF; text-decoration:underline;}
+                </p>
+            </div>
+            <p>
+                以上樣式的意思為：<br>
+                1) 一開始時，連接文字的顏色是紅色。<br>
+                2) 一但被連接的頁面有被看過，連接文字顏色就變為藍色。<br>
+                3) 當滑鼠蓋在連接上面時，文字大小變為 20，文字顏色變為綠色，而且下劃線會出現。<br>
+                4) 當連接被點擊時，文字顏色變為粉紅色，而且下劃線不會消失。
+            </p>
+            <p>
+                請將您的滑鼠滑到以下的 『測試連接』上，您就可以看到以上樣是出現。
+            </p>
+            <center>下一頁：<a href="list.html">CSS 清單</a></center>
+        </div>
+    </div>
+</body>
+</html>

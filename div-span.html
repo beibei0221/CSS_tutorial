@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Div 與 CSS Span</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS Div 與 CSS Span</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>CSS Div 與 CSS Span</b></h3>
+            <h5>Div</h5>
+            <p>
+                Div 這個標籤目的是將內容分為不同的區域，而每一個區域可以根據 CSS 中的宣告而有自己的樣式。Div 是一個區塊級容器 (block-level container)，這代表在 &lt;/div&gt; 標籤後會換行。
+            </p>
+            <p>
+                舉例來說，如果我們有以下的 CSS 樣式：
+            </p>
+            <div class="block">
+                <p>
+                    .large {<br>
+                    &nbsp; color: #00FF00;<br>
+                    &nbsp; font-family:arial;<br>
+                    &nbsp; font-size: 4pt;<br>
+                    }
+                </p>
+            </div>
+            <p>以下的 HTML 碼，</p>
+            <div class="block">
+                <p>
+                    &lt;div class="large"&gt;<br>
+                    &nbsp; 這是 DIV 範例。<br>
+                    &lt;/div&gt;
+                </p>
+            </div>
+            <p>就會顯現為，</p>
+            <div class="large">
+                這是 DIV 範例。
+            </div>
+            <h5>Span</h5>
+            <p>
+                Span 跟 Div 類似的地方是，這兩個標籤的目的都是將內容分為不同的區域。不同的是，Span 可以涵蓋更細層的元素。所以，我們甚至可以用 &lt;span&gt; 來調整單一文字的樣式。另外，在 &lt;/span&gt; 之後並不會換行。
+            </p>
+            <p>
+                舉例來說，如果我們有以下的 CSS 樣式：
+            </p>
+            <div class="block">
+                <p>
+                    .largefont {<br>
+                    &nbsp; color: #0066FF;<br>
+                    &nbsp; font-family:arial;<br>
+                    &nbsp; font-size: 6px;<br>
+                    }
+                </p>
+            </div>
+            <p>以下的 HTML 碼，</p>
+            <div class="block">
+                <p>
+                    Span 不是&lt;span class="largefont"&gt;區塊級的&lt;/span&gt;.
+                </p>
+            </div>
+            <p>就會顯現為，</p>
+            <p>Span 不是<span class="largefont">區塊級的</span>.</p>
+            <center>下一頁：<a href="length-units.html">CSS 長度單位</a></center>
+        </div>
+    </div>
+</body>
+</html>

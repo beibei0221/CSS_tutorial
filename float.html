@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 浮動 (Float)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 浮動</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>浮動</b></h3>
+            <p>
+                一個在大型網站常見的格式，就是將文字繞著一個圖案顯現。這是用 <b>float</b> (浮動) 這個屬性來達成的。
+            </p>
+            <p>
+                <b>float</b> 屬性有三個可能的值：left、right、和 none。來看看以下的例子：
+            </p>
+            <p>
+                例 1：若有以下的 CSS 宣告，
+            </p>
+            <div class="block">
+                <p>
+                    #leftfloat {<br>
+                    &nbsp;  float:left;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;span id="leftfloat"&gt;&lt;img src="yp.jpg"&gt;&lt;/span&gt;這個例子是用來顯示 float:left 會如何影響整個頁面的呈現。在這裡，圖案浮動於左邊。
+                </p>
+            </div>
+            <p>
+                就會顯現為，
+            </p>
+            <div class="greenblock">
+                <span id="leftfloat">
+                    <img src="img/yp.jpg">
+                </span>
+                <p>
+                    這個例子是用來顯示 float:left 會如何影響整個頁面的呈現。在這裡，圖案浮動於左邊。
+                </p>
+            </div>
+            <p>
+                例 2：若有以下的 CSS 宣告，
+            </p>
+            <div class="block">
+                <p>
+                    #rightfloat {<br>
+                    &nbsp;  float:right;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;span id="rightfloat"&gt;&lt;img src="yp.jpg"&gt;&lt;/span&gt;這個例子是用來顯示 float:right 會如何影響整個頁面的呈現。在這裡，圖案浮動於右邊。
+                </p>
+            </div>
+            <p>
+                就會顯現為，
+            </p>
+            <div class="greenblock">
+                <span id="rightfloat">
+                    <img src="img/yp.jpg">
+                </span>
+                <p>
+                    這個例子是用來顯示 float:right 會如何影響整個頁面的呈現。在這裡，圖案浮動於右邊。
+                </p>
+            </div>
+            <center>下一頁：<a href="clear.html">CSS 清除</a></center>
+        </div>
+    </div>
+</body>
+</html>

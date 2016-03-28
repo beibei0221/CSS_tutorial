@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 背景屬性 (Background)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 背景屬性</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>背景屬性</b></h3>
+            <p>
+                在 CSS 中常見的背景 (background) 屬性有以下幾種：
+            </p>
+            <ul>
+                <li>
+                    <a href="background.html#color">background-color</a>
+                </li>
+                <li>
+                    <a href="background.html#image">background-image</a>
+                </li>
+                <li>
+                    <a href="background.html#repeat">background-repeat</a>
+                </li>
+                <li>
+                    <a href="background.html#attachment">background-attachment</a>
+                </li>
+                <li>
+                    <a href="background.html#position">background-position</a>
+                </li>
+            </ul>
+            <p>
+                每一個屬性在以下會有詳細地介紹：
+            </p>
+            <a name="color"></a>
+            <h5>background-color</h5>
+            <p>
+                <b>background-color</b> 屬性是用來指定背景的顏色。
+            </p>
+            <table border=1 class="font13px">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {background-color: #00FF00;}</td>
+                    <td class="bggreen">
+                        綠色背景
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {background-color: red;}</td>
+                    <td class="bgred">
+                        紅色背景
+                    </td>
+                </tr>
+            </table>
+            <a name="image"></a>
+            <h5>background-image</h5>
+            <p>
+                <b>background-image</b> 屬性是用來指定用什麼圖案來當做背景。
+            </p>
+            <table border=1 class="font13px">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {background-image:url(yp.jpg);}</td>
+                    <td class="bgimage">
+                        有背景圖案
+                    </td>
+                </tr>
+            </table>
+            <a name="repeat"></a>
+            <h5>background-repeat</h5>
+            <p>
+                <b>background-repeat</b> 屬性是用來指定背景圖案重不重複。預設值是 "repeat"，代表此背景圖案將在 x- 及 y-方向都會重覆。其他的值為 x-repeat (x-方向重複)、y-repeat (y-方向重複)、以及 no-repeat (不重複)。
+            </p>
+            <p>
+                舉例如下：
+            </p>
+            <table border=1 class="font13px">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; background-image:url(yp.jpg);<br>
+                        &nbsp; background-repeat: no-repeat;<br>
+                        }
+                    </td>
+                    <td class="bgimage">
+                        背景圖案不重複。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; background-image:url(yp.jpg);<br>
+                        &nbsp; background-repeat: repeat-x;<br>
+                        }
+                    </td>
+                    <td class="bgrepeatx">
+                        背景圖案在 x-方向重複。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; background-image:url(yp.jpg);<br>
+                        &nbsp; background-repeat: repeat-y;<br>
+                        }
+                    </td>
+                    <td class="bgrepeaty">
+                        背景圖案在 y-方向重複。
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; background-image:url(yp.jpg);<br>
+                        &nbsp; background-repeat: repeat;<br>
+                        }
+                    </td>
+                    <td class="bgrepeat">
+                        背景圖案在 x- 及 y-方向重複。
+                    </td>
+                </tr>
+            </table>
+            <a name="attachment"></a>
+            <h5>background-attachment</h5>
+            <p>
+                <b>background-attachment</b> 屬性是用來指定背景圖案是否在螢幕上固定。這個屬性可能的值為 "fixed" (當網頁捲動時，背景圖案固定不動) 以及 "scroll" (當網頁捲動時，背景圖案會跟著移動)。
+            </p>
+            <p>
+                以下是兩個例子：
+            </p>
+            <p>
+                body {background-attachment: fixed;<br>
+                &nbsp;  background-image: url("yp.jpg");<br>
+                &nbsp;  background-repeat: no-repeat;<br>
+                }
+            </p>
+            <iframe width=200 height=100 src="fixed-sample.html"></iframe>
+            <p>
+                body { background-image: url("yp.jpg");<br>
+                &nbsp;  background-repeat: no-repeat;<br>
+                &nbsp;  background-position: 20% 20%;<br>
+                }
+            </p>
+            <iframe width=200 height=100 src="scroll-sample.html"></iframe>
+            <a name="position"></a>
+            <h5>background-position</h5>
+            <p>
+                <b>background-position</b> 屬性是用來指定背景圖案的位置。它的值可以是：
+            </p>
+            <ul>
+                <li>
+                    兩個字：第一個字為 [top,center,bottom] 中三選一，而第二個字由 [left,center,right] 中三選一。
+                </li>
+                <li>
+                    兩個百分比：第一個百分比為 x-軸的百分比，第二個為 y-軸的百分比。
+                </li>
+                <li>
+                    兩個數目：第一個數目為 x-軸的位置，第二個數目為 y-軸的位置。
+                </li>
+            </ul>
+            <p>
+                舉例如下：
+            </p>
+            <div class="one-two">
+                <div class="positionex1">
+                    在這個視窗內，圖案是在正中間。
+                </div>
+            </div>
+            <div class="one-two">
+                <div class="positionex2">
+                    在這個視窗中，圖案的位置離上面 20% 與離左邊 20% 的地方。
+                </div>
+            </div>
+            <center>下一頁：<a href="color.html">CSS 顏色</a></center>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 邊框 (Border)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 邊框</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>邊框</b></h3>
+            <p>
+                在 CSS 中常見的邊框 (border) 屬性有以下幾種：
+            </p>
+            <ul>
+                <li>
+                    <a href="border.html#borderstyle">border-style</a>
+                </li>
+                <li>
+                    <a href="border.html#borderwidth">border-width</a>
+                </li>
+                <li>
+                    <a href="border.html#bordercolor">border-color</a>
+                </li>
+                <li>
+                    <a href="border.html#borderdirection">border-top-, border-left-, border-bottom-, border-right-</a>
+                </li>
+                <li>
+                    <a href="border.html#border">border</a>
+                </li>
+            </ul>
+            <a name="borderstyle"></a>
+            <h5>border-style</h5>
+            <p>
+                <b>border-style</b> 屬性指定邊框的樣式。以下的表格列出這個屬性可能有的值，以及每一個值顯現出來的結果。
+            </p>
+            <table class="font13px">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {border-style:solid;}</td>
+                    <td>
+                        <p class="solid">
+                            實線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:dashed;}</td>
+                    <td>
+                        <p class="dashed">
+                            虛線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:double;}</td>
+                    <td>
+                        <p class="double">
+                            雙線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:dotted;}</td>
+                    <td>
+                        <p class="dotted">
+                            點線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:groove;}</td>
+                    <td>
+                        <p class="groove">
+                            凹線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:ridge;}</td>
+                    <td>
+                        <p class="ridge">
+                            凸線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:inset;}</td>
+                    <td>
+                        <p class="inset">
+                            嵌入線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-style:outset;}</td>
+                    <td>
+                        <p class="outset">
+                            浮出線
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="borderwidth"></a>
+            <h5>border-width</h5>
+            <p>
+                <b>border-width</b> 屬性是用來設定邊框的寬度。可用的值為 thin (薄)、medium (中等)、thick (厚)，或是一個數字。
+            </p>
+            <table class="font13px">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {border-width:9px; border-style:solid;}</td>
+                    <td>
+                        <p class="solid9px">
+                            邊框寬度為 9px
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-width:medium; border-style:dashed;}</td>
+                    <td>
+                        <p class="dashedmed">
+                            邊框寬度為中等
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="bordercolor"></a>
+            <h5>border-color</h5>
+            <p>
+                <b>border-color</b> 屬性是用來設定邊寬的顏色。
+            </p>
+            <p>
+                舉例如下：
+            </p>
+            <table class="font13px">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {border-color:#0000FF; border-style:solid;}</td>
+                    <td>
+                        <p class="solidblue">
+                            藍色邊框
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-color:red; border-style:dotted;}</td>
+                    <td>
+                        <p class="dottedred">
+                            紅色邊框
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="borderdirection"></a>
+            <h5>border-top-, border-left-, border-bottom-, border-right-</h5>
+            <p>
+                我們可以將方向 (top - 上、bottom - 下、left - 左、right - 右) 和樣式、寬度、及顏色合起來而成為一個屬性。舉例來說， <b>border-top-style</b> 屬性就是用來設定上邊框的樣式。 以下舉幾個例子：
+            </p>
+            <table class="font13px">
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {border-top-style:solid; border-bottom-style:dotted;}</td>
+                    <td>
+                        <p class="borderdirectionex1">
+                            例1：上邊框為實線，下邊框為點線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-top-style:solid; border-top-width:medium;}</td>
+                    <td>
+                        <p class="borderdirectionex2">
+                            例 2：上邊框為實線，且寬度中等
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {border-left-style:solid; border-bottom-style:dashed; border-bottom-color:#00FF00;}</td>
+                    <td>
+                        <p class="borderdirectionex3">
+                            例3：左邊框為實線，下邊框為虛線，且顏色為綠色
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="border"></a>
+            <h5>border</h5>
+            <p>
+                若四邊的邊框屬性都一樣，那我們可以用一個 <b>border</b> 屬性來描述，而不必四個邊都描述一次。另外，我們可以在同一行一次宣告邊框樣式、邊框寬度、以及邊框顏色。
+            </p>
+            <p>
+                舉例來說，若我們有以下的 CSS 碼，
+            </p>
+            <div class="block">
+                <p>
+                    p {<br>
+                    &nbsp; border:#0000FF 5px solid;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p&gt;用一行來宣佈所有邊框的屬性&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                會顯現出
+            </p>
+            <p class="border5pxblue">
+                用一行來宣佈所有邊框的屬性
+            </p>
+            <center>下一頁：<a href="padding.html">CSS 留白</a></center>
+        </div>
+    </div>
+</body>
+</html>

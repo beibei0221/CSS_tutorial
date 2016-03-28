@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 留白 (Padding)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 留白</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>留白</b></h3>
+            <p>
+                我們從盒子模式那一頁看到，留白 (padding) 是在內容外，邊框內的部分。一個盒子有四個邊，所以我們可以對這四個邊的留白逐一設定：
+            </p>
+            <ul>
+                <li>padding-top (上)</li>
+                <li>padding-right (右)</li>
+                <li>padding-bottom (下)</li>
+                <li>padding-left (左)</li>
+            </ul>
+            <p>
+                第五個屬性，<a href="padding.html#padding">padding</a>，是用來作為同時設定四個邊留白的捷徑屬性。
+            </p>
+            <p>
+                有三種方式可以設定留白，分別為長度、百分比、以及 'auto'。我們來看以下的例子：
+            </p>
+            <div class="block">
+                <p>
+                    #container {<br>
+                    &nbsp; padding-top:15px;<br>
+                    &nbsp; padding-left:10px;<br>
+                    &nbsp; padding-right:30px;<br>
+                    &nbsp; padding-bottom:40px;<br>
+                    &nbsp; border: 1px solid 000000;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                以下的 HTML碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;div id="container"&gt;<br>
+                    這是留白的例子。這裡對了上、下、左、右的留白空間都有設定。<br>
+                    &lt;/div&gt;
+                </p>
+            </div>
+            <p>
+                會顯示出，
+            </p>
+            <div class="paddingex">
+                這是留白的例子。這裡對了上、下、左、右的留白空間都有設定。
+            </div>
+            <p>
+                在這裡，上面的留白為 15px，左邊的留白為 10px，右面的留白為 30px，而下面的留白為 40px。
+            </p>
+            <a name="padding"></a>
+            <h5>留白捷徑</h5>
+            <p>
+                所有四個邊的留白可以同時由 <b>padding</b> 屬性設定。它的語法如下：
+            </p>
+            <p class="green">
+                padding: [上面留白值] [右邊留白值] [下面留白值] [左邊留白值]
+            </p>
+            <p>
+                在這裡，順序非常重要。第一個值一定是上面留白的值，第二個值一定是右邊留白的值，第三個值一定是下面留白的值，而第四個值一定是左邊留白的值。
+            </p>
+            <center>下一頁：<a href="background.html">CSS 背景</a></center>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 文字 (Text)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 文字</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>文字</b></h3>
+            <p>
+                以下是幾個最常被用到與文字樣式有關的 CSS 屬性。
+            </p>
+            <ul>
+                <li>
+                    <a href="text.html#direction">direction</a>
+                </li>
+                <li>
+                    <a href="text.html#letterspacing">letter-spacing</a>
+                </li>
+                <li>
+                    <a href="text.html#lineheight">line-height</a>
+                </li>
+                <li>
+                    <a href="text.html#textalign">text-align</a>
+                </li>
+                <li>
+                    <a href="text.html#textdecoration">text-decoration</a>
+                </li>
+                <li>
+                    <a href="text.html#textindent">text-indent</a>
+                </li>
+                <li>
+                    <a href="text.html#texttransform">text-transform</a>
+                </li>
+                <li>
+                    <a href="text.html#wordspacing">word-spacing</a>
+                </li>
+            </ul>
+            <a name="direction"></a>
+            <h5>direction</h5>
+            <p>
+                <b>direction</b> 屬性是用來設定文字的方向。可能的值為 'ltr' 及 'rtl'。
+            </p>
+            <p>
+                舉例來說，若 CSS 宣告是，
+            </p>
+            <div class="block">
+                <p>
+                    p {<br>
+                    &nbsp; direction:ltr;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p&gt;LTR 方向&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現
+            </p>
+            <div class="greenblock">
+                <p class="ltr">
+                    LTR 方向
+                </p>
+            </div>
+            <p>
+                若 CSS 宣告是，
+            </p>
+            <div class="block">
+                <p>
+                    p {<br>
+                    &nbsp; direction:rtl;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p&gt;RTL 方向&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現
+            </p>
+            <div class="greenblock">
+                <p class="rtl">
+                    RTL 方向
+                </p>
+            </div>
+            <a name="letterspacing"></a>
+            <h5>letter-spacing</h5>
+            <p>
+                <b>letter-spacing</b> 屬性是用來設定每一個字母之間的空間。舉例來說，若 CSS 宣告是，
+            </p>
+            <div class="block">
+                <p>
+                    p {<br>
+                    &nbsp; letter-spacing:8px;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p&gt;8px between letters&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現
+            </p>
+            <div class="greenblock">
+                <p class="letterspace8px">
+                    8px between letters
+                </p>
+            </div>
+            <a name="lineheight"></a>
+            <h5>line-height</h5>
+            <p>
+                <b>line-height</b> 屬性是用來設定每一行之間的空間。舉例來說，若 CSS 宣告是，
+            </p>
+            <div class="block">
+                <p>
+                    p {<br>
+                    &nbsp; line-height:40px;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p&gt;第一行和第二行之間&lt;br&gt;相隔 40px。&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現
+            </p>
+            <div class="greenblock">
+                <p class="lineheight40px">
+                    第一行和第二行之間<br>相隔 40px。
+                </p>
+            </div>
+            <a name="textalign"></a>
+            <h5>text-align</h5>
+            <p>
+                <b>text-align</b> 屬性是用來設定文字是如何對齊。可能的值包括：
+            </p>
+            <ul>
+                <li><b>left</b>：靠左對齊</li>
+                <li><b>right</b>：靠右對齊</li>
+                <li><b>center</b>：向中間對齊</li>
+                <li><b>justify</b>：左右對齊</li>
+            </ul>
+            <p>
+                請看以下的例子：
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-align:left;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textleft">
+                            這一段句子，是靠左對齊的例子。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-align:right;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textright">
+                            這一段句子，是靠右對齊的例子。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-align:center;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textcenter">
+                            這一段句子，是向中間對齊的例子。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-align:justify;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textjustify">
+                            這一段句子，是左右兩邊都對齊的例子。
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="textdecoration"></a>
+            <h5>text-decoration</h5>
+            <p>
+                <b>text-decoration</b> 屬性是用來設定文字上有什麼裝飾。可能的值包括：
+            </p>
+            <ul>
+                <li><b>underline</b>：文字下加上一條線。</li>
+                <li><b>overline</b>：文字上加上一條線。</li>
+                <li><b>line-through</b>：文字中間加上一條線劃過去。</li>
+                <li><b>blink</b>：讓文字閃爍。</li>
+            </ul>
+            <p>
+                請看以下的例子：
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-decoration:underline;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textunderline">
+                            文字下加一條線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-decoration:overline;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textoverline">
+                            文字上加一條線
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-decoration:line-through;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textlinethrough">
+                            文字中間加上一條線劃過去
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="textindent"></a>
+            <h5>text-indent</h5>
+            <p>
+                <b>text-indent</b> 屬性是用來設定每一段的第一行前面要留多少空間。可設定的值包括百分比以及長度。舉例來說，若有以下的 CSS 宣告，
+            </p>
+            <div class="block">
+                <p>
+                    p {<br>
+                    &nbsp; text-indent:15px;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p&gt;這一段第一行的最前面會留 15px 的空間。之後的行數就沒有留任和空間了。&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現，
+            </p>
+            <div class="greenblock">
+                <p class="indent15px">
+                    這一段第一行的最前面會留 15px 的空間。之後的行數就沒有留任和空間了。
+                </p>
+            </div>
+            <a name="texttransform"></a>
+            <h5>text-transform</h5>
+            <p>
+                <b>text-transform</b> 屬性是用來控制大小寫是如何展現的。可能的值包括：
+            </p>
+            <ul>
+                <li><b>capitalize</b>：每一個字的第一個字母都以大寫顯現，其他的字母則不改變。</li>
+                <li><b>uppercase</b>：所有的字母都以大寫顯現。</li>
+                <li><b>lowercase</b>：所有的字母都以小寫顯現。</li>
+                <li><b>none</b>：大小寫不做任何改變。</li>
+            </ul>
+            <p>
+                舉例來說，用以上這幾個值用在 "this is a LAWYER" 這幾個字上，我們回得到以下的結果：
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-transform:capitalize;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textcapitalize">
+                            this is a LAWYER
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-transform:uppercase;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textuppercase">
+                            this is a LAWYER
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        p {<br>
+                        &nbsp; text-transform:lowercase;<br>
+                        }
+                    </td>
+                    <td>
+                        <p class="textlowercase">
+                            this is a LAWYER
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <a name="wordspacing"></a>
+            <h5>word-spacing</h5>
+            <p>
+                <b>word-spacing</b> 屬性是用來設定每個字與每個字之間的距離。舉例來說，若 CSS 宣告是，
+            </p>
+            <div class="block">
+                <p>
+                    p {<br>
+                    &nbsp; word-spacing:5px;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p&gt;Words here are separated by 5px.&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現，
+            </p>
+            <div class="greenblock">
+                <p class="wordspace5px">
+                    Words here are separated by 5px.
+                </p>
+            </div>
+            <center>下一頁：<a href="float.html">CSS 浮動</a></center>
+        </div>
+    </div>
+</body>
+</html>

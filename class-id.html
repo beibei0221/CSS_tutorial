@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Class 與 CSS ID</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS Class 與 CSS ID</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>CSS Class 與 CSS ID</b></h3>
+            <p>
+                在 <a href="syntax.html">CSS 語法</a>那一頁中, 我們有提到，Class 及 ID 都是使用者設定的選擇器 (selector)。以下分別介紹：
+            </p>
+            <h5>Class</h5>
+            <p>
+                Class 的宣告法，是先放一個句點 (.)，之後再列出選擇器名稱。設定一個 Class 選擇器的語法如下：
+            </p>
+            <p class="green">
+                .【Class 名稱】{<br>
+                &nbsp;  屬性：設定值；<br>
+                &nbsp;  ...<br>
+                }
+            </p>
+            <p>
+                舉例來說，
+            </p>
+            <div class="block">
+                <p>
+                    .navbar {<br>
+                    &nbsp;  color:#0000FF;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                要將以上的樣式套用在 HTML 內，我們用以下的 HTML 碼：
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p class="navbar"&gt;這是用 Class 選擇器的例子。&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                以上的 HTML 碼會顯現出：
+            </p>
+            <div class="greenblock">
+                <p class="navbar">
+                    這是用 Class 選擇器的例子。
+                </p>
+            </div>
+            <p>
+                一個 Class 選擇器可以同時有好幾個不同的物件 (instance)。這是靠以下的語法：
+            </p>
+            <p class="green">
+                【型類選擇器】.【選擇器名稱】{<br>
+                 &nbsp;  屬性：設定值；<br>
+                 &nbsp;  ...<br>
+                }
+            </p>
+            <p>
+                舉例來說，若有以下的 CSS 宣告，
+            </p>
+            <div class="block">
+                <p>
+                    b.special {<br>
+                    &nbsp; color:#0000FF;<br>
+                    }
+                </p>
+                <br>
+                <p>
+                    i.special {<br>
+                    &nbsp; color:#FF0000;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    這個例子顯示出 &lt;b class="special"&gt;同一個選擇器&lt;/b&gt;可以&lt;i class="special"&gt;有不同的 instance。&lt;/i&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現出，
+            </p>
+            <div class="greenblock">
+                <p>
+                    這個例子顯示出<b class="special">同一個選擇器</b>可以<i class="special">有不同的 instance。</i>
+                </p>
+            </div>
+            <h5>多重 Class</h5>
+            <p>
+                我們也可以同時套用數個 class。舉例來說，若我們有以下的 CSS 宣告，
+            </p>
+            <div class="block">
+                <p>
+                    .applylarge {<br>
+                    &nbsp; font-size:20px;<br>
+                    }
+                </p>
+                <br>
+                <p>
+                    .applyred {<br>
+                    &nbsp; color:#FF0000;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p class="applylarge applyred"&gt;這是多重 Class 的例子。&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現出，
+            </p>
+            <div class="greenblock">
+                <p class="applylarge applyred">
+                    這是多重 Class 的例子。
+                </p>
+            </div>
+            <h5>ID</h5>
+            <p>
+                ID 的宣告法，是先放一個井字號 (#)，之後再列出選擇器名稱。設定一個 ID 選擇器的語法如下：
+            </p>
+            <p class="green">
+                #【ID 名稱】{<br>
+                &nbsp;  屬性：設定值；<br>
+                &nbsp;  ...<br>
+                }
+            </p>
+            <p>
+                舉例來說，
+            </p>
+            <div class="block">
+                <p>
+                    #footer {<br>
+                    &nbsp; color:#FF00FF;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                要將以上的樣式套用在 HTML 內，我們用以下的 HTML 碼：
+            </p>
+            <div class="block">
+                <p>
+                    &lt;p id="footer"&gt;這是用 ID 選擇器的例子。&lt;/p&gt;
+                </p>
+            </div>
+            <p>
+                顯現出的結果為，
+            </p>
+            <div class="greenblock">
+                <p id="selector">
+                    這是用 ID 選擇器的例子。
+                </p>
+            </div>
+            <h5>Class 跟 ID 的比較</h5>
+            <p>
+                這兩者最大的不同，是在於 ID 選擇器在一個 HTML 文件中只能被使用一次，而 Class 選擇器在一個 HTML 文件中可以被使用多次。第二個不同的地方，是 ID 選擇器可以被 Javascript 中的 GetElementByID 函數所運用，而 Class 選擇器無法被 Javascript 運用到。
+            </p>
+            <p>
+                並沒有什麼固定的規則，來決定什麼時候要用 ID 及什麼時候要用 Class。我們的建議是盡量用 Class，因為這樣子最靈活 (同一個 HTML 文件可以利用這類的選擇器多次)。唯一的例外，是當你要用 Javascript 的 GetElementByID 函數時。在這個情況下，你就應該要用 ID。
+            </p>
+            <p>
+                Class 名稱及 ID 名稱都是對大小寫敏感的。舉例來說，.classone 及 .ClassOne 是代表兩個不同的 Class 選擇器。
+            </p>
+            <center>下一頁：<a href="div-span.html">CSS Div 與 CSS Span</a></center>
+        </div>
+    </div>
+</body>
+</html>

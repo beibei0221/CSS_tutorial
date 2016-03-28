@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position 位置</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS Position 位置</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>位置</b></h3>
+            <p>
+                在 CSS 中常見的位置 (position) 屬性有以下幾種：
+            </p>
+            <ul>
+                <li>
+                    <a href="position.html#position">position</a>
+                </li>
+                <li>
+                    <a href="position.html#direction">top</a>
+                </li>
+                <li>
+                    <a href="position.html#direction">right</a>
+                </li>
+                <li>
+                    <a href="position.html#direction">left</a>
+                </li>
+                <li>
+                    <a href="position.html#direction">bottom</a>
+                </li>
+                <li>
+                    <a href="position.html#overflow">overflow</a>
+                </li>
+                <li>
+                    <a href="position.html#z-index">z-index</a>
+                </li>
+            </ul>
+            <a name="position"></a>
+            <h5>position</h5>
+            <p>
+                <b>position</b> 屬性制定出要用哪一類的位置。可能的值有：
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        <b>static (預設值)</b>：這代表元素會被放在預設的地方。如果 <b>position</b> 的值是被設定為 statics 的話，那 top、bottom、left、和 right 的值就都沒有意義了。
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>absolute</b>：這代表元素會被放在瀏覽器內的某個位置 (依 top、bottom、left、和 right 的值而定)。當使用者將網頁往下拉時，元素也會跟著改變位置。
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>relative</b>：這代表元素被放的地方將會與預設的地方有所不同。不同的程度是依照 top、bottom、left、和 right 的值而定。
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>fixed</b>：這代表元素會被放在瀏覽器內的某個位置 (依 top、bottom、left、和 right 的值而定)。當使用者將網頁往下拉時，元素的位置不會改變。
+                    </p>
+                </li>
+            </ul>
+            <a name="direction"></a>
+            <h5>top, right, bottom, left</h5>
+            <p>
+                每一個方向 <b>(top, right, bottom, left)</b> 的位置值可以是長度、百分比、或是 auto。
+            </p>
+            <p>
+                讓我們來看個例子：
+            </p>
+            <p>
+                CSS 碼：
+            </p>
+            <div class="block">
+                <p>
+                    div {<br>
+                    &nbsp; background-color:#FF00FF;<br>
+                    &nbsp; width:500px;<br>
+                    &nbsp; height:60px;<br>
+                    }
+                </p>
+                <br>
+                <p>
+                    p {<br>
+                    &nbsp; position:relative;<br>
+                    &nbsp; top:10px;<br>
+                    &nbsp; left:50px;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                在這裡，以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;div&gt;<br>
+                    &nbsp; &lt;p&gt;舉例文字。<br>
+                    &lt;/div&gt;
+                </p>
+            </div>
+            <p>
+                會顯示出，
+            </p>
+            <div class="position">
+                <p>
+                    舉例文字。
+                </p>
+            </div>
+            <p>
+                請注意以上文字的位置：它是在離粉紅色方塊上面 10px，及左邊 50px 的地方。
+            </p>
+            <a name="overflow"></a>
+            <h5>overflow</h5>
+            <p>
+                <b>overflow</b> 屬性是用來設定當內容放不下時的處理方式。可能的值包括：
+            </p>
+            <ul>
+                <li><b>visible</b>：內容完全呈現，不管放得下放不下。</li>
+                <li><b>hidden</b>：放不下的內容就不顯示出來。</li>
+                <li><b>scroll</b>：無論內容放得下放不下，都加入上下捲軸及左右捲軸的功能。</li>
+                <li><b>auto</b>：當內容放不下時，加上捲軸的功能。</li>
+            </ul>
+            <p>
+                以上這四個值的例子如下：
+            </p>
+            <center>
+                <b>auto</b>
+                <div class="overflowauto">
+                    我們用這一區來看不同的 overflow 值展現出來會有什麼不一樣。
+                    <br><br>
+                    這裡展現的值是 auto。
+                </div>
+            </center>
+            <center>
+                <b>hidden</b>
+                <div class="overflowhidden">
+                    我們用這一區來看不同的 overflow 值展現出來會有什麼不一樣。
+                    <br><br>
+                    這裡展現的值是 hidden。
+                </div>
+            </center>
+            <center>
+                <b>visible</b>
+                <div class="overflowvisible">
+                    我們用這一區來看不同的 overflow 值展現出來會有什麼不一樣。
+                    <br><br>
+                    這裡展現的值是 visible。
+                </div>
+            </center>
+            <center>
+                <b>scroll</b>
+                <div class="overflowscroll">
+                    我們用這一區來看不同的 overflow 值展現出來會有什麼不一樣。
+                    <br><br>
+                    這裡展現的值是 scroll。
+                </div>
+            </center>
+            <a name="z-index"></a>
+            <h5>z-index</h5>
+            <p>
+                <b>z-index</b> 屬性是用來決定元素重疊的順序。換言之，當兩個元素有重疊的情況時，z-index 值將會決定哪一個元素在上面。z-index 值比較大個元素會被放在上面。
+            </p>
+            <p>
+                舉例來說，假設我們有以下的 CSS 碼：
+            </p>
+            <div class="block">
+                <p>
+                    #redblock {<br>
+                    &nbsp; z-index: 1;<br>
+                    &nbsp; position:<br>
+                    &nbsp; absolute;<br>
+                    &nbsp; width:80px;<br>
+                    &nbsp; height:100px;<br>
+                    &nbsp; top:20px;<br>
+                    &nbsp; left:20px;<br>
+                    &nbsp; border: 1px solid #FFF;<br>
+                    &nbsp; background-color: #FF0000;<br>
+                    }
+                </p>
+                <br>
+                <p>
+                    #pinkblock {<br>
+                    &nbsp; z-index: 2;<br>
+                    &nbsp; position: absolute;<br>
+                    &nbsp; width:100px;<br>
+                    &nbsp; height:80px;<br>
+                    &nbsp; top:50px;<br>
+                    &nbsp; left:50px;<br>
+                    &nbsp; border: 1px solid #FFF;<br>
+                    &nbsp; background-color: #FF00FF;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;div id="redblock"&gt;&lt;/div&gt;<br>
+                    &lt;div id="pinkblock"&gt;&lt;/div&gt;
+                </p>
+            </div>
+            <p>
+                會顯示出，
+            </p>
+            <iframe src="z-index.html" height="200px"></iframe>
+            <p>
+                從以上可見，粉紅色方塊 (pinkblock) 的 z-index 值 (2) 比紅色方塊 (redblock) 的 z-index 值 (1) 高，因此粉紅色方塊在上面。
+            </p>
+            <center>下一頁：<a href="text.html">CSS 文字</a></center>
+        </div>
+    </div>
+</body>
+</html>

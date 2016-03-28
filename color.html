@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 顏色</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 顏色</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>顏色</b></h3>
+            <p>
+                <b>color</b> (顏色) 屬性能讓我們在 CSS 中設定一個元素的顏色。
+            </p>
+            <p>
+                這個屬性可以有以下三類的設定值：
+            </p>
+            <ul>
+                <li>十六進位值</li>
+                <li>RGB 碼</li>
+                <li>顏色名稱</li>
+            </ul>
+            <h5>十六進位值</h5>
+            <p class="green">
+                {color:#XXXXXX;}
+            </p>
+            <p>
+                X 為十六進位碼 (從 0 到 9，以及 A 到 F)。
+            </p>
+            <h5>RGB</h5>
+            <p class="green">
+                {color:rgb(X,Y,Z); }
+                <font color="black">
+                      X、Y、和 Z 都是介於 0 和 255 之間的數字。<br>
+                      或是<br>
+                </font>
+                {color:rgb(X%,Y%,Z%); }
+                <font color="black">
+                      X、Y、和 Z 都是介於 0 和 100 之間的數字。<br>
+                </font>
+            </p>
+            <h5>顏色名稱</h5>
+            <p class="green">
+                {color:[顏色名稱];}
+            </p>
+            <p>
+                十六進位值是一個以六碼 (如果前兩碼、中間兩碼、以及最後兩碼都一樣的話，那也可以以三碼的形式表現。舉例來說，#FFF 及 #FFFFFF 都是代表白色) 來設定顏色。這一個 <a href="http://www.1keydata.com/html-tutorial/html-color-codes.php">十六進位碼顏色表</a> 可以讓我們知道什麼碼會對應到什麼顏色。
+            </p>
+            <p>
+                在這裡，我們就以上三種方式各舉一個例子：
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {color:#FF0000;}</td>
+                    <td class="red">FF0000 代表紅色。</td>
+                </tr>
+                <tr>
+                    <td>p {color:rgb (255,0,255);}</td>
+                    <td class="pink">rgb(255,0,255) 是粉紅色。</td>
+                </tr>
+                <tr>
+                    <td>p {color:green;}</td>
+                    <td class="green">這是綠色。</td>
+                </tr>
+            </table>
+            <center>下一頁：<a href="font.html">CSS 字體</a></center>
+        </div>
+    </div>
+</body>
+</html>

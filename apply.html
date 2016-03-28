@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 套用方式</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 套用方式</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>CSS 套用方式</b></h3>
+            <p>我們可以用以下四種方式，將 CSS 套用入 HTML 文件中：</p>
+            <ul>
+                <li><a href="apply.html#inline">行內套用 (Inline)</a></li>
+                <li><a href="apply.html#embed">嵌入套用 (Embed)</a></li>
+                <li><a href="apply.html#link">外部連接套用 (External Link)</a></li>
+                <li><a href="apply.html#import">匯入套用 (Import)</a></li>
+            </ul>
+            <a name="inline"></a>
+            <h5>行內套用</h5>
+            <p>我們可以在 HTML 文件內直接宣告樣式。舉例來說，</p>
+            <div class="block">
+                <p>
+                    &lt;p style='font-family:verdana; font-size:16;'&gt;This is font size 16.&lt;/p&gt;
+                </p>
+            </div>
+            <p>以上的 HTML 文件在瀏覽器上會顯現為：</p>
+            <p>This is font size 16.</p>
+            <a name="embed"></a>
+            <h5>嵌入套用</h5>
+            <p>樣式可以嵌入於 HTML 文件中 (通常是在 &lt;head&gt; 內)。舉例來說，</p>
+            <div class="block">
+                <p>
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&lt;style type="text/css"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;div {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color:#FF0000;<br>
+                    &nbsp;&nbsp;&nbsp; }<br>
+                    &nbsp;&nbsp;&lt;/style&gt;<br>
+                    &lt;/head&gt;
+                </p>
+                <br>
+                <p>
+                    &lt;body&gt;<br>
+                    &nbsp;&nbsp;&lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;背景顏色是紅色<br>
+                    &nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/body&gt;<br>
+                </p>
+            </div>
+            <p>以上的 HTML 會顯現出：</p>
+            <div class="redblock">背景顏色是紅色</div>
+            <a name="link"></a>
+            <h5>外部連接套用</h5>
+            <p>
+                在這種方式下，所有的 CSS 樣式宣告都是存在另外一個檔案中。該檔案通常名稱為 .css。在 HTML 文件的 &lt;header&gt; .. &lt;/header&gt; 之中，我們將用以下的程式碼將這個 .css 檔案連接進入：
+            </p>
+            <p>
+                &lt;link rel=stylesheet type="text/css" href="external-stylesheet.css"&gt;
+            </p>
+            <p>
+                以上這一行會將在 external-stylesheet.css 這個檔案內所宣告的樣式加入 HTML 文件內。
+            </p>
+            <a name="import"></a>
+            <h5>匯入套用</h5>
+            <p>
+                外部的 CSS 樣式也可以被匯入進 HTML 文件。匯入的做法為利用 @import 這個指令。@import 的語法為：
+            </p>
+            <p>
+                &lt;STYLE TYPE="text/css"&gt;<br>
+                &lt;!--<br>
+                &nbsp; @import url(http://www.mysite.com/style.css);<br>
+                --&gt;<br>
+                &lt;/STYLE&gt;
+            </p>
+            <p>
+                @import 指令最初的用意，是為了能夠針對不同的瀏覽器而運用不同的樣式。不過，現在已經沒有這個必要。現在用 @import 的目的，最常是要加入多個 CSS 樣式。當多個 CSS 樣式被 @import 的方式加入，而不同 CSS 樣式互相有衝突時，後被加入的 CSS 樣式有優先的順位 (詳情請見 <a href="cascade.html">CSS 串接</a>)。
+            </p>
+            <center>下一頁：<a href="media-types.html">CSS 媒體類別</a></center>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 邊界 (Margin)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 邊界</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>邊界</b></h3>
+            <p>
+                如我們在<a href="box-model.html">盒子模式</a>那一頁看到的，邊界 (margin) 是在邊框之外，並且是用來設定各個元素之間的距離。一個盒子有四個邊，所以我們可以對這四個邊逐一設定：
+            </p>
+            <ul>
+                <li>margin-top (上邊界)</li>
+                <li>margin-right (右邊界)</li>
+                <li>margin-bottom (下邊界)</li>
+                <li>margin-left (左邊界)</li>
+            </ul>
+            <p>
+                第五個屬性，<a href="margin.html#margin">margin</a>，是用來作為同時設定四個邊的捷徑屬性。
+            </p>
+            <p>
+                有三種方式可以設定邊界，分別為長度、百分比、以及 'auto'。我們來看以下的例子：
+            </p>
+            <div class="block">
+                <p>
+                    #container {<br>
+                    &nbsp;  margin-top:5px;<br>
+                    &nbsp;  margin-left:10%;<br>
+                    &nbsp;  margin-right:auto;<br>
+                    &nbsp;  margin-bottom:20px;<br>
+                    &nbsp;  border: 1px solid #000000;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;div id="container"&gt;<br>
+                    &nbsp;  這是邊界的例子。<br>
+                    &lt;/div&gt;
+                </p>
+            </div>
+            <p>
+                會顯示為，
+            </p>
+            <div class="greenblock">
+                <div id="marginex">
+                    這是邊界的例子。
+                </div>
+            </div>
+            <p>
+                在這裡，上邊界為 5px，左邊界為 10%，下邊界為 20px。
+            </p>
+            <a name="margin"></a>
+            <h5>邊界捷徑</h5>
+            <p>
+                所有四個邊的邊界可以同時由 <b>margin</b> 屬性設定。它的語法如下：
+            </p>
+            <p class="green">
+                margin: [上面邊界值] [右邊邊界值] [下面邊界值] [左邊邊界值]
+            </p>
+            <p>
+                在這裡，順序非常重要。第一個值一定是上邊界的值，第二個值一定是右邊界的值，第三個值一定是下邊界的值，而第四個值一定是左邊界的值。
+            </p>
+            <center>下一頁：<a href="border.html">CSS 邊框</a></center>
+        </div>
+    </div>
+</body>
+</html>

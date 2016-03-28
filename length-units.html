@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 長度單位</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 長度單位</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>長度單位</b></h3>
+            <p>
+                在 CSS ，長度單位可以分為兩大類：絕對 (absolute) 單位以及相對 (relative) 單位。
+            </p>
+            <p>
+                相對單位包括：
+            </p>
+            <ul>
+                <li>px: pixels</li>
+                <li>em: em</li>
+                <li>ex: x 字母的高度</li>
+            </ul>
+            <p>
+                絕對單位包括：
+            </p>
+            <ul>
+                <li>in: 吋</li>
+                <li>cm: 公分</li>
+                <li>mm: 公厘</li>
+                <li>pt: points, 1 pt = 1/72 吋</li>
+                <li>pc: picas, 1 pc = 12 pt</li>
+            </ul>
+            <p>
+                如果沒有註明單位，那預設的單位是 px。
+            </p>
+            <p>
+                以下是每一種單位的例子：
+            </p>
+            <table border=1>
+                <tr>
+                    <td>CSS 樣式</td>
+                    <td>顯現結果</td>
+                </tr>
+                <tr>
+                    <td>p {font-size:9px;}</td>
+                    <td>
+                        <p class="font9px">
+                            文字大小為 9px。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:3em;}</td>
+                    <td>
+                        <p style="font-size: 3em;">
+                            文字大小為 3em。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:3ex;}</td>
+                    <td>
+                        <p class="font3ex">
+                            文字大小為 3ex。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:0.2in;}</td>
+                    <td>
+                        <p class="font0.2in">
+                            文字大小為 0.2 inch。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:0.5cm;}</td>
+                    <td>
+                        <p class="font0.5cm">
+                            文字大小為 0.5 cm。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:12mm;}</td>
+                    <td>
+                        <p class="font12mm">
+                            文字大小為 12 mm。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:24pt;}</td>
+                    <td>
+                        <p class="font24pt">
+                            文字大小為 24 pt。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>p {font-size:2pc;}</td>
+                    <td>
+                        <p class="font2pc">
+                            文字大小為 2 pc。
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                在大部分的情況下，用相對長度單位會比較適合。這是因為，這樣子您能讓使用者依自己的喜好來加大或減小字體。如果您用絕對長度單位的話，使用者就無法改變字體的大小了。
+            </p>
+            <center>下一頁：<a href="box-model.html">CSS 盒子模式</a></center>
+        </div>
+    </div>
+</body>
+</html>

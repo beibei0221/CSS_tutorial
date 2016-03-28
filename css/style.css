@@ -1,0 +1,624 @@
+@charset "utf-8";
+
+#container {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+#header {
+    width: 860px;
+    padding: 20px;
+    background-color: #BBD9EE;
+}
+
+#menu {
+    width: 200px;
+    background-color: #6600FF;
+    overflow: hidden;
+    float: left;
+}
+
+#content {
+    width: 660px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    float: left;
+}
+
+.one-two {
+    width: 46.8%;
+    float: left;
+    overflow: hidden;
+    padding: 10px;
+}
+
+h1 {
+    color: #CC33CC;
+    font-size: 25px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+h3 {
+    font-size: 17px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+h5 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+body {
+    margin: 0px;
+    font-family: "微軟正黑體";
+    font-size: 15px;
+    line-height: 25px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 5px;
+}
+
+td p {
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-before: 0.5em;
+    padding: 5px;
+}
+
+strong {
+    font-size: 20px;
+}
+
+center {
+    margin-top: 20px;
+}
+
+#menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    border-bottom: 1px solid #ccc;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    background-color: #ccc;
+}
+
+.green {
+    color: rgb(2, 169, 47);
+}
+
+.block {
+    background-color: #dddddd;
+    padding: 10px;
+}
+
+.block p {
+    margin: 0;
+}
+
+/*網頁範例樣式*/
+
+.verdana16px {
+    font-family: verdana;
+    font-size: 16px;
+}
+
+.redblock {
+    background-color: red;
+}
+
+.lightgreen{
+    color: #00FF00;
+}
+
+.large {
+    color: #00FF00;
+    font-size: large;
+}
+
+.largefont {
+    color: #0066FF;
+    font-size: xx-large;
+}
+
+.romanlist {
+    list-style-type: upper-roman;
+}
+
+.squarelist {
+    list-style-type: square;
+}
+
+.insidelist {
+    list-style-position: inside;
+}
+
+.outsidelist {
+    list-style-position: outside;
+}
+
+.circlelist {
+    list-style-image: url("../img/circle.gif");
+}
+
+.shortcutlist{
+    list-style: url("../img/circle.gif") none inside;
+}
+
+#leftfloat {
+    float:left;
+}
+
+#clearleft {
+    clear:left;
+}
+
+#rightfloat {
+    float:right;
+}
+
+.greenblock {
+    background-color: #CCFFCC;
+    padding: 10px;
+}
+
+.greenblock p {
+    margin: 0;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.pink {
+    color: rgb(255,0,255);
+}
+
+.navbar {
+    color: #0000FF;
+}
+
+b.special {
+    color: #0000FF;
+}
+
+i.special {
+    color: #FF0000;
+}
+
+.applylarge {
+    font-size: 20px;
+}
+
+.applyred {
+    color: #FF0000;
+}
+
+#selector {
+    color: #FF00FF;
+}
+
+.font13px {
+    font-size: 13px;
+}
+
+.font9px {
+    font-size: 9px;
+}
+
+.font150p {
+    font-size: 150%;
+}
+
+.font0.8cm {
+    font-size: 0.8cm;
+}
+
+.fontsmall {
+    font-size: small;
+}
+
+.fontlarge {
+    font-size: large;
+}
+
+.font3em {
+    font-size: 3em;
+}
+
+.font3ex {
+    font-size: 3ex;
+}
+
+.font0.2in {
+    font-size: 0.2in;
+}
+
+.font0.5cm {
+    font-size: 0.5cm;
+}
+
+.font12mm {
+    font-size: 12mm;
+}
+
+.font24pt {
+    font-size: 24pt;
+}
+
+.font2pc {
+    font-size: 2pc;
+}
+
+#marginex {
+    margin-top:5px;
+    margin-left:10%;
+    margin-right:auto;
+    margin-bottom:20px;
+    border: 1px solid #000000;
+}
+
+.solid {
+    border-style:solid;
+}
+
+.dashed {
+    border-style:dashed;
+}
+
+.double {
+    border-style: double;
+}
+
+.dotted {
+    border-style: dotted;
+}
+
+.groove {
+    border-style: groove;
+}
+
+.ridge {
+    border-style: ridge;
+}
+
+.inset {
+    border-style: inset;
+}
+
+.outset {
+    border-style: outset;
+}
+
+.solid9px {
+    border-width: 9px;
+    border-style: solid;
+}
+
+.dashedmed {
+    border-width: medium;
+    border-style: dashed;
+}
+
+.solidblue {
+    border-color: #0000FF;
+    border-style: solid;
+}
+
+.dottedred {
+    border-color: red;
+    border-style: dotted;
+}
+
+.borderdirectionex1 {
+    border-top-style: solid;
+    border-bottom-style: dotted;
+}
+
+.borderdirectionex2 {
+    border-top-style: solid;
+    border-top-width: medium;
+}
+
+.borderdirectionex3 {
+    border-left-style: solid;
+    border-bottom-style: dashed;
+    border-bottom-color: #00FF00;
+}
+
+.border5pxblue {
+    border:#0000FF 5px solid;
+}
+
+.paddingex {
+    padding-top:15px;
+    padding-left:10px;
+    padding-right:30px;
+    padding-bottom:40px;
+    border: 1px solid #000000;
+    background-color: #CCFFCC;
+}
+
+.bgred {
+    background-color: red;
+}
+
+.bggreen {
+    background-color: #00FF00
+}
+
+.bgimage {
+    background-image: url(../img/yp.jpg);
+    background-repeat: no-repeat;
+}
+
+.bgrepeatx {
+    background-image: url(../img/yp.jpg);
+    background-repeat: repeat-x;
+}
+
+.bgrepeaty {
+    background-image: url(../img/yp.jpg);
+    background-repeat: repeat-y;
+}
+
+.bgrepeat {
+    background-image: url(../img/yp.jpg);
+    background-repeat: repeat;
+}
+
+.attachmentfixed {
+    background-attachment: fixed;
+    background-image: url(../img/yp.jpg);
+    background-repeat: no-repeat;
+    height: 300;
+    white-space: nowrap;
+}
+
+.attachmentscroll {
+    background-attachment: scroll;
+    background-image: url(../img/yp.jpg);
+    background-repeat: no-repeat;
+}
+
+.positionex1 {
+    background-image: url(../img/yp.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.positionex2 {
+    background-image: url(../img/yp.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.verdana {
+    font-family: verdana;
+}
+
+.arial {
+    font-family: arial;
+}
+
+.impact {
+    font-family: impact;
+}
+
+.weight100 {
+    font-weight: 100;
+}
+
+.weight900 {
+    font-weight: 900;
+}
+
+.weightbold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.variant {
+    font-variant:small-caps;
+}
+
+.tableex1 {
+    border: 0;
+    border-collapse: separate;
+    width: auto;
+}
+
+.tableex1 th {
+    background-color:yellow;
+}
+
+.tableex1 td {
+    border-bottom: 1px solid #000000;
+}
+
+.tableex2 {
+    border: 0;
+    width: 200px;
+}
+
+.tableex2 tr {
+    border-bottom: 1px solid #000;
+}
+
+.position {
+    background-color:#FF00FF;
+    height:60px;
+}
+
+.position p {
+    position:relative;
+    top:10px;
+    left:50px;
+}
+
+.overflowauto {
+    border: 1px solid #999;
+    overflow: auto;
+    width: 300px;
+    height: 80px;
+    text-align: left;
+}
+
+.overflowhidden {
+    border: 1px solid #999;
+    overflow: hidden;
+    width: 300px;
+    height: 80px;
+    text-align: left;
+}
+
+.overflowscroll {
+    border: 1px solid #999;
+    overflow: scroll;
+    width: 300px;
+    height: 80px;
+    text-align: left;
+}
+
+.overflowvisible {
+    border: 1px solid #999;
+    overflow: visible;
+    width: 300px;
+    height: 80px;
+    text-align: left;
+}
+
+#redblock {
+  z-index: 1;
+  position:
+  absolute;
+  width:80px;
+  height:100px;
+  top:20px;
+  left:20px;
+  border: 1px solid #FFF;
+  background-color: #FF0000;
+}
+
+#pinkblock {
+  z-index: 2;
+  position: absolute;
+  width:100px;
+  height:80px;
+  top:50px;
+  left:50px;
+  border: 1px solid #FFF;
+  background-color: #FF00FF;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.letterspace8px {
+    letter-spacing: 8px;
+}
+
+.lineheight40px {
+    line-height: 40px;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textright {
+    text-align: right;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textjustify {
+    text-align: justify;
+}
+
+.textunderline {
+    text-decoration: underline;
+}
+
+.textoverline {
+    text-decoration: overline;
+}
+
+.textlinethrough {
+    text-decoration: line-through;
+}
+
+.indent15px {
+    text-indent: 15px;
+}
+
+.textcapitalize {
+    text-transform: capitalize;
+}
+
+.textuppercase {
+    text-transform: uppercase;
+}
+
+.textlowercase {
+    text-transform: lowercase;
+}
+
+.wordspace5px {
+    word-spacing: 5px;
+}

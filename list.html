@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 清單 (List)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 清單</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>清單</b></h3>
+            <p>
+                在 CSS 中常見的清單 (list) 屬性有以下幾種：
+            </p>
+            <ul>
+                <li>
+                    <a href="list.html#styletype">list-style-type</a>
+                </li>
+                <li>
+                    <a href="list.html#styleposition">list-style-position</a>
+                </li>
+                <li>
+                    <a href="list.html#styleimage">list-style-image</a>
+                </li>
+                <li>
+                    <a href="list.html#liststyle">list-style</a>
+                </li>
+            </ul>
+            <p>
+                每一個屬性在以下會有詳細地介紹：
+            </p>
+            <a name="styletype"></a>
+            <h5>list-style-type</h5>
+            <p>
+                <b>list-style-type</b> 屬性是用來設定在清單中，每一條之前的記號要用什麼。最常見的 <b>list-style-type</b> 設定值為：
+            </p>
+            <ul>
+                <li>none (沒有)</li>
+                <li>disc (全黑圓圈)</li>
+                <li>circle (空心圓圈)</li>
+                <li>square (正方形)</li>
+            </ul>
+            <p>
+                One may also wish to use ordered character sets. Common ones are:
+            </p>
+            <ul>
+                <li>upper-latin (大寫拉丁文)</li>
+                <li>lower-latin (小寫拉丁文)</li>
+                <li>upper-roman (大寫羅馬文)</li>
+                <li>lower-roman (小寫羅馬文)</li>
+                <li>upper-alpha (大寫希臘文)</li>
+                <li>lower-alpha (小寫希臘文)</li>
+            </ul>
+            <p>
+                以下列舉幾個例子：
+            </p>
+            <p>
+                例1：
+            </p>
+            <div class="block">
+                <p>
+                    &lt;ul style='list-style-type:upper-roman;'&gt;<br>
+                    &nbsp; &lt;li&gt;項目 1&lt;/li&gt;<br>
+                    &nbsp; &lt;li&gt;項目 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </p>
+            </div>
+            <p>
+                結果：
+            </p>
+            <ul class="romanlist">
+                <li>項目1</li>
+                <li>項目2</li>
+            </ul>
+            <p>
+                例2：
+            </p>
+            <div class="block">
+                <p>
+                    &lt;ul style='list-style-type:square;'&gt;<br>
+                    &nbsp; &lt;li&gt;正方形項目 1&lt;/li&gt;<br>
+                    &nbsp; &lt;li&gt;正方形項目 2&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </p>
+            </div>
+            <p>
+                結果：
+            </p>
+            <ul class="squarelist">
+                <li>正方形項目1</li>
+                <li>正方形項目2</li>
+            </ul>
+            <a name="styleposition"></a>
+            <h5>list-style-position</h5>
+            <p>
+                <b>list-style-position</b> 屬性讓我們可以決定記號是否應該被視為是文字的一部份，並且由此而決定記號的位置。這個屬性可能的設定值為 "inside" 及 "outside"。預定值為 "outside"。
+            </p>
+            <p>
+                以下是兩個例子，由其中我們可以看出來 inside 及 outside 的不同：
+            </p>
+            <p>
+                例3：
+            </p>
+            <div class="block">
+                <p>
+                    &lt;ul style='list-style-position:inside;'&gt;<br>
+                    &nbsp; &lt;li&gt;第一個項目&lt;br&gt;第一項目的第二行<br>
+                    &nbsp; &lt;li&gt;第二個項目<br>
+                    &lt;/ul&gt;
+                </p>
+            </div>
+            <p>
+                結果：
+            </p>
+            <ul class="insidelist">
+                <li>第一個項目</li>第一項目的第二行
+                <li>第二個項目</li>
+            </ul>
+            <p>
+                例4：
+            </p>
+            <div class="block">
+                <p>
+                    &lt;ul style='list-style-position:outside;'&gt;<br>
+                    &nbsp; &lt;li&gt;第一個項目&lt;br&gt;第一項目的第二行<br>
+                    &nbsp; &lt;li&gt;第二個項目<br>
+                    &lt;/ul&gt;
+                </p>
+            </div>
+            <p>
+                結果：
+            </p>
+            <ul class="outsidelist">
+                <li>第一個項目</li>第一項目的第二行
+                <li>第二個項目</li>
+            </ul>
+            <a name="styleimage"></a>
+            <h5>list-style-image</h5>
+            <p>
+                <b>list-style-image</b> 屬性是用來將某個圖案設定為記號。這個屬性的用法為，
+            </p>
+            <p class="green">
+                list-style-image:url([image_url]);
+            </p>
+            <p>
+                舉例來說，若 CSS 樣式為：
+            </p>
+            <div class="block">
+                <p>
+                    ul {<br>
+                    &nbsp; list-style-image:url("circle.gif");<br>
+                    }
+                </p>
+            </div>
+            <p>
+                那以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;ul&gt;<br>
+                    &nbsp; &lt;li&gt;第一項利用自我設定的記號。<br>
+                    &nbsp; &lt;li&gt;第二項利用自我設定的記號。<br>
+                    &lt;/ul&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現為，
+            </p>
+            <ul class="circlelist">
+                <li>第一項利用自我設定的記號。</li>
+                <li>第二項利用自我設定的記號。</li>
+            </ul>
+            <a name="liststyle"></a>
+            <h5>list-style</h5>
+            <p>
+                以上提到的這三個 (<b>list-style-type</b>、<b>list-style-position</b>、及 <b>list-style-image</b>) 屬性可以被簡化為一個 <b>list-style</b> 屬性。這種做法稱為捷徑 (shortcut)。在這裡，屬性的順序並不重要。
+            </p>
+            <p>
+                舉例來說，以下的 CSS 樣式，
+            </p>
+            <div class="block">
+                <p>
+                    ul {<br>
+                    &nbsp; list-style: url("circle.gif") none inside;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                套用在以下的 HTML 碼中，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;ul&gt;<br>
+                    &nbsp; &lt;li&gt;第一項以捷徑方式列出的清單。<br>
+                    &nbsp; &lt;li&gt;第二項以捷徑方式列出的清單。<br>
+                    &lt;/ul&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現出，
+            </p>
+            <ul class="shortcutlist">
+                <li>第一項以捷徑方式列出的清單。</li>
+                <li>第二項以捷徑方式列出的清單。</li>
+            </ul>
+            <center>下一頁：<a href="table.html">CSS 表格</a></center>
+        </div>
+    </div>
+</body>
+</html>

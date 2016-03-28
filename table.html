@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 表格 (Table)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>CSS 表格</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">CSS 語法教學</a>
+                </li>
+                <li>
+                    <a href="syntax.html">CSS 語法</a>
+                </li>
+                <li>
+                    <a href="apply.html">CSS 套用方式</a>
+                </li>
+                <li>
+                    <a href="media-types.html">CSS 媒體類別</a>
+                </li>
+                <li>
+                    <a href="cascade.html">CSS 串接</a>
+                </li>
+                <li>
+                    <a href="inheritance.html">CSS 繼承</a>
+                </li>
+                <li>
+                    <a href="class-id.html">CSS Class 與 ID</a>
+                </li>
+                <li>
+                    <a href="div-span.html">CSS Div 與 Span</a>
+                </li>
+                <li>
+                    <a href="length-units.html">CSS 長度單位</a>
+                </li>
+                <li>
+                    <a href="box-model.html">CSS 盒子模式</a>
+                </li>
+                <li>
+                    <a href="margin.html">CSS 邊界 (Margin)</a>
+                </li>
+                <li>
+                    <a href="border.html">CSS 邊框 (Border)</a>
+                </li>
+                <li>
+                    <a href="padding.html">CSS 留白 (Padding)</a>
+                </li>
+                <li>
+                    <a href="background.html">CSS 背景 (Background)</a>
+                </li>
+                <li>
+                    <a href="color.html">CSS 顏色</a>
+                </li>
+                <li>
+                    <a href="font.html">CSS 字體</a>
+                </li>
+                <li>
+                    <a href="link.html">CSS 連接</a>
+                </li>
+                <li>
+                    <a href="list.html">CSS 清單 (List)</a>
+                </li>
+                <li>
+                    <a href="table.html">CSS 表格 (Table)</a>
+                </li>
+                <li>
+                    <a href="position.html">CSS 位置 (Position)</a>
+                </li>
+                <li>
+                    <a href="text.html">CSS 文字 (Text)</a>
+                </li>
+                <li>
+                    <a href="float.html">CSS 浮動 (Float)</a>
+                </li>
+                <li>
+                    <a href="clear.html">CSS 清除 (Clear)</a>
+                </li>
+                <li>
+                    <a href="cursor.html">CSS 滑鼠游標圖案</a>
+                </li>
+                <li>
+                    <a href="codes.html">CSS 樣式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h3><a href="index.html">CSS 教學</a>&nbsp;>&nbsp;<b>表格</b></h3>
+            <p>
+                在 HTML 中，常看到 <table> 之內加了 border、cellpadding、及 cellspacing 的屬性。如果我們有透過 CSS 來制定表格的樣式，那就不需要在 HTML 之內用到這些屬性了。
+            </p>
+            <p>
+                <b>table</b>、<b>th</b>、<b>tr</b>、及 <b>td</b> 這幾個選擇器可以使用許多在這個教學中有提到的 CSS 屬性，例如 <a href="text.html"><b>文字</b></a>、<a href="font.html"><b>字體</b></a>、<a href="border.html"><b>邊框</b></a>、<a href="color.html"><b>顏色</b></a>、以及 <a href="background.html"><b>背景</b></a>。
+            </p>
+            <p>
+                來看個例子。假設我們想要把以下的樣式加入表格內：
+            </p>
+            <ul>
+                <li>表格： 沒有邊框，字體是 arial，字的大小是 14px。</li>
+                <li>標題： 背景是黃色。</li>
+                <li>格子： 每個格子的下面有一條黑色實線。</li>
+                <li>低於 60 的分數欄內，字體是紅色的。</li>
+            </ul>
+            <p>
+                我們就會使用以下的樣式表：
+            </p>
+            <div class="block">
+                <p>
+                    table {<br>
+                    &nbsp;  border: 0;<br>
+                    &nbsp;   font-family: arial;<br>
+                    &nbsp;   font-size:14px;<br>
+                    }
+                    <br>
+                    th {<br>
+                    &nbsp;   background-color:yellow;<br>
+                    }
+                    <br>
+                    td {<br>
+                    &nbsp;   border-bottom:1 solid #000000;<br>
+                    }
+                    <br>
+                    .fail {<br>
+                    &nbsp;   color:#FF0000;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                以下的 HTML 碼，
+            </p>
+            <div class="block">
+                &lt;table&gt;<br>
+                &nbsp; &lt;tr&gt;<br>
+                &nbsp; &nbsp; &lt;th&gt;學生&lt;/th&gt;<br>
+                &nbsp; &nbsp; &lt;th&gt;分數&lt;/th&gt;<br>
+                &nbsp; &lt;/tr&gt;<br>
+                &nbsp; &lt;tr&gt;<br>
+                &nbsp; &nbsp; &lt;td&gt;Stella&lt;/td&gt;<br>
+                &nbsp; &nbsp; &lt;td&gt;85&lt;/td&gt;<br>
+                &nbsp; &lt;/tr&gt;<br>
+                &nbsp; &lt;tr&gt;<br>
+                &nbsp; &nbsp; &lt;td&gt;Sophie&lt;/td&gt;<br>
+                &nbsp; &nbsp; &lt;td&gt;95&lt;/td&gt;<br>
+                &nbsp; &lt;/tr&gt;<br>
+                &nbsp; &lt;tr&gt;<br>
+                &nbsp; &nbsp; &lt;td&gt;Alice&lt;/td&gt;<br>
+                &nbsp; &nbsp; &lt;td class="fail"&gt;55&lt;/td&gt;<br>
+                &nbsp; &lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </div>
+            <p>
+                就會顯現出，
+            </p>
+            <table class="tableex1">
+                <tr>
+                    <th>學生</th>
+                    <th>分數</th>
+                </tr>
+                <tr>
+                    <td>Stella</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Sophie</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td class="red">55</td>
+                </tr>
+            </table>
+            <a name="collapse"></a>
+            <h5>border-collapse</h5>
+            <p>
+                在這裡我們要特別提到一個跟表格有關的 CSS 屬性，那就是 <b>border-collapse</b>。基本上，這個屬性可以直接代替 cellspacing=0 的宣告。我門來看看下面的例子：
+            </p>
+            <p>
+                CSS 宣告如下，
+            </p>
+            <div class="block">
+                <p>
+                    table {<br>
+                    &nbsp;  border:0;<br>
+                    &nbsp;  border-collpase:collpase;<br>
+                    &nbsp;  width:200px;<br>
+                    }
+                </p>
+                <br>
+                <p>
+                    tr {<br>
+                    &nbsp;  border-bottom:1px solid #000;<br>
+                    }
+                </p>
+            </div>
+            <p>
+                以下的 HTML 碼，
+            </p>
+            <div class="block">
+                <p>
+                    &lt;table&gt;<br>
+                    &nbsp; &lt;tr&gt;&lt;td&gt;年度&lt;/td&gt;&lt;td&gt;收入&lt;/td&gt;&lt;/tr&gt;<br>
+                    &nbsp; &lt;tr&gt;&lt;td&gt;2006&lt;/td&gt;&lt;td&gt;35.2M&lt;/td&gt;&lt;/tr&gt;<br>
+                    &nbsp; &lt;tr&gt;&lt;td&gt;2007&lt;/td&gt;&lt;td&gt;40.1M&lt;/td&gt;&lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </p>
+            </div>
+            <p>
+                就會顯現出，
+            </p>
+            <table class="tableex2">
+                <tr>
+                    <td>年度</td>
+                    <td>收入</td>
+                </tr>
+                <tr>
+                    <td>2006</td>
+                    <td>35.2M</td>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td>40.1M</td>
+                </tr>
+            </table>
+            <p>
+                請注意到，年度攔及收入欄的下劃線中間並沒有空隙。這就是 border-collapse:collapse 的作用。
+            </p>
+
+            <center>下一頁：<a href="position.html">CSS 位置</a></center>
+        </div>
+    </div>
+</body>
+</html>
